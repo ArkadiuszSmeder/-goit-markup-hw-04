@@ -46,7 +46,7 @@
                     <section class="agency-motto">
                         <div class="container">
                             <h1 class="motto">EFEKTYWNE ROZWIĄZANIA<br>DLA WASZEGO BIZNESU</h1>
-                            <button class="order-button" type="button">Zamów usługę</button> 
+                            <button class="order-button" type="button" data-modal-open>Zamów usługę</button> 
                         </div>
                     </section>
 
@@ -372,5 +372,13 @@
                             </div>
                         </div>
                     </footer>
+                    
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button type="button" class="close-btn" data-modal-close>X</button>
+                        </div>
+                    </div>
+
+                    <script src="./js/modal.js"></script>
         </body>
 </html>
