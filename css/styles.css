@@ -323,7 +323,7 @@
 
 
 .footer-mail:hover,
-.footer-mail:active{
+.footer-mail:focus{
     color:var(--blue-color);
     transition-property: color, background-color, box-shadow, transform;
     transition-duration: 250ms;
@@ -331,7 +331,7 @@
 }
 
 .footer-phone:hover,
-.footer-phone:active{
+.footer-phone:focus{
     color:var(--blue-color);
     transition-property: color, background-color, box-shadow, transform;
     transition-duration: 250ms;
@@ -629,6 +629,7 @@
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill:#AFB1B8;
+  display: block;
 }
 
 .icons-client{
@@ -653,10 +654,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-footer {
-  display: block;
-  padding-top: 12px;
-}
 
 .join {
   font-family: "Roboto";
@@ -668,6 +665,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  padding-top: 12px;
 }
 
 .social-footer-box {
@@ -700,6 +698,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color, box-shadow, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
 }
 
 /*++++++++++ BACKDROP ++++++++++*/
