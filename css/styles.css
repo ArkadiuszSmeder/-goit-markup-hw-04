@@ -117,7 +117,7 @@
   }
 
   .contact-list:hover,
-  .contact-listfocus{
+  .contact-list:focus{
     color:var(--blue-color);
     fill:var(blue);
     transition-property: color, background-color, box-shadow, transform;
@@ -247,6 +247,7 @@
     background: var(--button-color);
     border-radius: 4px;
     border-color: var(--button-color);
+    border-style: solid; /* pozbycie się efektu cienia na przycisku*/
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -256,6 +257,7 @@
     color: var(--dark-gray-color);
     height: 38px;
     margin-right: 8px;
+    border: none; /* pozbycie się efektu cienia na przycisku*/
 }
 
 .portfolio-button:hover,
@@ -590,7 +592,7 @@
 
 /*Dodane po konsultacji---------------------------------------------------------------------------*/
 
-.social__media-icon a {
+.socialmedia-icon a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
