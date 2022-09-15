@@ -79,13 +79,12 @@
   }
 
   .nav-list:hover,
-  .nav-list:focus,
-  .nav-list:active{
+  .nav-list:focus{
     color:var(--blue-color);
     transition-property: color;
   }
 
-  .underline::after {
+ /* .underline::after {
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -94,8 +93,28 @@
     position: absolute;
     bottom: 0;
     display: flex;
-    transform: translateY(32px);
-  }
+    transform: translateY(29px);
+  }*/
+
+    .nav-list:after {
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--blue-color);
+      content: '';
+      position: absolute;
+      bottom: -32px;
+      left:0;
+      background-color: transparent;
+    }
+
+    .nav-link:hover, .nav-link:focus, .underline {
+    color: var(--blue-color);
+    }
+
+    .nav-link:hover:after, .nav-link:focus:after, .underline:after {
+    background-color: var(--blue-color);
+    }
 
   .contact{
     display: flex;
