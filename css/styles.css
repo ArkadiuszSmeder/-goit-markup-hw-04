@@ -78,11 +78,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-
   .nav-list:hover,
-  .nav-list:focus{
+  .nav-list:focus,
+  .nav-list:active{
     color:var(--blue-color);
-    transition-property: color, background-color, box-shadow, transform;
+    transition-property: color;
   }
 
   .underline::after {
@@ -123,7 +123,7 @@
   .contact-list:focus{
     color:var(--blue-color);
     fill:var(blue);
-    transition-property: color, background-color, box-shadow, transform;
+    transition-property: color;
   }
 
 .order-button{
@@ -269,7 +269,7 @@
   background: var(--blue-color);
   border-color: var(--blue-color);
   color:var(--white-color);
-  transition-property: color, background-color, box-shadow, transform;
+  transition-property: color, background-color, box-shadow, border-color;
 }
 
 .portfolio-button-big{
@@ -332,13 +332,13 @@
 .footer-mail:hover,
 .footer-mail:focus{
     color:var(--blue-color);
-    transition-property: color, background-color, box-shadow, transform;
+    transition-property: color;
 }
 
 .footer-phone:hover,
 .footer-phone:focus{
     color:var(--blue-color);
-    transition-property: color, background-color, box-shadow, transform;
+    transition-property: color;
 }
 
 .address-list{
@@ -497,7 +497,7 @@
 .project-card:hover,
 .project-card:focus{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition-property: color, background-color, box-shadow, transform;
+  transition-property: background-color, box-shadow, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -619,7 +619,7 @@
   background-position: center;
   background-repeat: no-repeat;
   fill: var(--white-color);
-  transition-property: color, background-color, box-shadow, transform;
+  transition-property: fill, background-color;
 }
 
 /*koniec dodania-------------------------------------------------------------------------------------*/
@@ -640,7 +640,7 @@
 .client-box:focus {
   border: 1px solid var(--blue-color);
   fill: var(--blue-color);
-  transition-property: color, background-color, box-shadow, transform;
+  transition-property: fill, border;
 }
 
 .icons-client{
@@ -691,7 +691,7 @@
 .social-footer-icon:focus {
   background-color: var(--blue-color);
   fill:var(--white-color);
-  transition-property: color, background-color, box-shadow, transform;
+  transition-property: fill, background-color;
   border-radius: 50%;
 }
 
