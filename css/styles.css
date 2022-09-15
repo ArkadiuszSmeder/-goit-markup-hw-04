@@ -74,14 +74,15 @@
     color:var(--dark-gray-color);
     text-decoration: none;
     position: relative;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
 
   .nav-list:hover,
   .nav-list:focus{
     color:var(--blue-color);
     transition-property: color, background-color, box-shadow, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .underline::after {
@@ -114,6 +115,8 @@
   .contact-list{
     color:var(--light-grey-color);
     text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .contact-list:hover,
@@ -121,8 +124,6 @@
     color:var(--blue-color);
     fill:var(blue);
     transition-property: color, background-color, box-shadow, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .order-button{
@@ -258,6 +259,8 @@
     height: 38px;
     margin-right: 8px;
     border: none; /* pozbycie się efektu cienia na przycisku*/
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -267,8 +270,6 @@
   border-color: var(--blue-color);
   color:var(--white-color);
   transition-property: color, background-color, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button-big{
@@ -322,21 +323,22 @@
 }
 
 
+.footer-mail,
+.footer-box {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-mail:hover,
 .footer-mail:focus{
     color:var(--blue-color);
     transition-property: color, background-color, box-shadow, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-phone:hover,
 .footer-phone:focus{
     color:var(--blue-color);
     transition-property: color, background-color, box-shadow, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .address-list{
@@ -588,6 +590,8 @@
   background-repeat: no-repeat;
   background-color: var(--white-color);
   fill:#AFB1B8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Dodane po konsultacji---------------------------------------------------------------------------*/
@@ -616,8 +620,6 @@
   background-repeat: no-repeat;
   fill: var(--white-color);
   transition-property: color, background-color, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*koniec dodania-------------------------------------------------------------------------------------*/
@@ -630,19 +632,8 @@
   border-radius: 4px;
   fill:#AFB1B8;
   display: block;
-}
-
-.icons-client{
-  margin: 16px 32px;
-  width: 106px;
-  height:60px;
-}
-
-.icons-client:hover path{
-fill:var(--blue-color);
-transition-property: color, background-color, box-shadow, transform;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-box:hover,
@@ -650,10 +641,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--blue-color);
   fill: var(--blue-color);
   transition-property: color, background-color, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icons-client{
+  margin: 16px 32px;
+  width: 106px;
+  height:60px;
+}
 
 .join {
   font-family: "Roboto";
@@ -689,6 +683,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background: rgba(255, 255, 255, 0.1);
   fill:var(--white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-footer-icon:hover,
@@ -696,8 +692,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--blue-color);
   fill:var(--white-color);
   transition-property: color, background-color, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
 }
 
