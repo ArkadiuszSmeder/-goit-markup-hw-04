@@ -76,12 +76,12 @@
     position: relative;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
   }
 
   .nav-list:hover,
   .nav-list:focus{
     color:var(--blue-color);
-    transition-property: color;
   }
 
  /* .underline::after {
@@ -136,13 +136,13 @@
     text-decoration: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
   }
 
   .contact-list:hover,
   .contact-list:focus{
     color:var(--blue-color);
     fill:var(blue);
-    transition-property: color;
   }
 
 .order-button{
@@ -280,6 +280,7 @@
     border: none; /* pozbycie się efektu cienia na przycisku*/
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, background-color, box-shadow, border-color;
 }
 
 .portfolio-button:hover,
@@ -288,7 +289,6 @@
   background: var(--blue-color);
   border-color: var(--blue-color);
   color:var(--white-color);
-  transition-property: color, background-color, box-shadow, border-color;
 }
 
 .portfolio-button-big{
@@ -346,18 +346,18 @@
 .footer-box {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .footer-mail:hover,
 .footer-mail:focus{
     color:var(--blue-color);
-    transition-property: color;
+
 }
 
 .footer-phone:hover,
 .footer-phone:focus{
     color:var(--blue-color);
-    transition-property: color;
 }
 
 .address-list{
@@ -511,14 +511,14 @@
   text-align: left;
   flex-basis: calc((100% - 60px)/3);
   overflow: hidden;
+  transition-property: background-color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover,
 .project-card:focus{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition-property: background-color, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-desc{
@@ -611,6 +611,7 @@
   fill:#AFB1B8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, background-color;
 }
 
 /*Dodane po konsultacji---------------------------------------------------------------------------*/
@@ -638,7 +639,6 @@
   background-position: center;
   background-repeat: no-repeat;
   fill: var(--white-color);
-  transition-property: fill, background-color;
 }
 
 /*koniec dodania-------------------------------------------------------------------------------------*/
@@ -653,13 +653,13 @@
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, border;
 }
 
 .client-box:hover,
 .client-box:focus {
   border: 1px solid var(--blue-color);
   fill: var(--blue-color);
-  transition-property: fill, border;
 }
 
 .icons-client{
@@ -704,13 +704,13 @@
   fill:var(--white-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, background-color;
 }
 
 .social-footer-icon:hover,
 .social-footer-icon:focus {
   background-color: var(--blue-color);
   fill:var(--white-color);
-  transition-property: fill, background-color;
   border-radius: 50%;
 }
 
