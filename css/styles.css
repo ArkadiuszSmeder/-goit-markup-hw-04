@@ -537,6 +537,8 @@
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-overlay-text{
@@ -550,8 +552,6 @@
 
 .project-card:hover .project-overlay{
   transform: translateX(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-box{
@@ -695,7 +695,7 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  gap: 10px;
+  gap: 100px;
   border-radius: 50%;
   background-size: contain;
   background-position: center;
@@ -763,3 +763,53 @@
   }
 
 /*++++++++++ END BACKDROP ++++++++++*/
+
+/*++++++++++ NEWSLETTER ++++++++++*/
+
+.signin-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-left: 78px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding-left: 78px;
+}
+
+.newsletter-input {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2F303A;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-input-btn {
+  width: 200px;
+  height: 50px;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
